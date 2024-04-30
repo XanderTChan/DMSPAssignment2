@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Futuristic Video Game Power Icons</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+            body { 
+                background-color: white;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="image-container"><img id="chaos_id" src="img/chaos.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="divinity_id" src="img/divinity.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="mindcontrol_id" src="img/mindcontrol.png" height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="sword_id" src="img/sword.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="time_id" src="img/time.jpg" height="200" width="200"/></div>
+            <div class="image-container"><img id="necro_id" src="img/necro.png" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="healing_id" src="img/healing.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="lightning_id" src="img/lightning.png" height="200" width="200"/></div>
+            <div class="image-container"><img id="weapon_id" src="img/weapon.png" height="200" width="200"/></div>
+        </div>
+        
+    </body>
+
+    <script> 
+
+        //interaction for Icon 1
+    // Create the audio element
+        const chaos_sound = document.createElement("audio");
+        chaos_sound.src = "sounds/chaos.mp3";
+
+    // Get the DOM element by ID
+    const chaos_Element = document.getElementById("chaos_id");
+
+    // Add event listener for pointer down
+    chaos_Element.onpointerdown = () => {
+    // Change the image source
+    chaos_Element.src = "img/chaos2.png";
+    chaos_Element.setAttribute("height", "200");
+    chaos_Element.setAttribute("width", "200");
+    
+    // Play the audio
+    chaos_sound.play();
+
+    // Reset the image source after a delay
+    setTimeout(() => { chaos_Element.src = "img/chaos.png"; }, 4700);
+};
+
+      //interaction for Icon 2
+// Create the audio element
+const divinity_sound = document.createElement("audio");
+divinity_sound.src = "sounds/divinity.mp3";
+
+// Get the DOM element by ID
+const divinity_Element = document.getElementById("divinity_id");
+
+// Add event listener for pointer down
+divinity_Element.onpointerdown = () => {
+    // Change the image source
+    divinity_Element.src = "img/divinity2.png";
+    divinity_Element.setAttribute("height", "200");
+    divinity_Element.setAttribute("width", "200");
+    
+    // Play the audio
+    divinity_sound.play();
+
+    // Reset the image source after a delay
+    setTimeout(() => { divinity_Element.src = "img/divinity.png"; }, 1850);
+};
+
+    //interaction for Icon 3
+const mindcontrol_sound = document.createElement("audio");
+mindcontrol_sound.src = "sounds/mindcontrol.wav";
+
+const mindcontrol_Element = document.getElementById("mindcontrol_id");
+
+mindcontrol_Element.onpointerdown = () => {
+    mindcontrol_Element.src = "img/mindcontrol2.png";
+    mindcontrol_Element.setAttribute("height", "200");
+    mindcontrol_Element.setAttribute("width", "200");
+    
+    mindcontrol_sound.play();
+
+    setTimeout(() => { mindcontrol_Element.src = "img/mindcontrol.png"; }, 2300);
+};
+
+const sword_sound = document.createElement("audio");
+sword_sound.src = "sounds/sword.mp3";
+
+const sword_Element = document.getElementById("sword_id");
+
+sword_Element.onpointerdown = () => {
+    sword_Element.src = "img/sword2.png";
+    sword_Element.setAttribute("height", "200");
+    sword_Element.setAttribute("width", "200");
+    
+    sword_sound.play();
+
+    setTimeout(() => { sword_Element.src = "img/sword.png"; }, 1000);
+};
+
+const time_sound = document.createElement("audio");
+time_sound.src = "sounds/time.mp3";
+
+const time_Element = document.getElementById("time_id");
+
+time_Element.onpointerdown = () => {
+    time_Element.src = "img/time2.png";
+    time_Element.setAttribute("height", "200");
+    time_Element.setAttribute("width", "200");
+    
+    time_sound.play();
+
+    setTimeout(() => { time_Element.src = "img/time.jpg"; }, 3000);
+};
+
+const necro_sound = document.createElement("audio");
+necro_sound.src = "sounds/necro.mp3";
+
+const necro_Element = document.getElementById("necro_id");
+
+necro_Element.onpointerdown = () => {
+    necro_Element.src = "img/necro2.png";
+    necro_Element.setAttribute("height", "200");
+    necro_Element.setAttribute("width", "200");
+    
+    necro_sound.play();
+
+    setTimeout(() => { necro_Element.src = "img/necro.png"; }, 1400);
+};
+
+const healing_sound = document.createElement("audio");
+healing_sound.src = "sounds/healing.wav";
+
+const healing_Element = document.getElementById("healing_id");
+
+healing_Element.onpointerdown = () => {
+    healing_Element.src = "img/healing2.png";
+    healing_Element.setAttribute("height", "200");
+    healing_Element.setAttribute("width", "200");
+    
+    healing_sound.play();
+
+    setTimeout(() => { healing_Element.src = "img/healing.png"; }, 1000);
+};
+
+const lightning_sound = document.createElement("audio");
+lightning_sound.src = "sounds/lightning.mp3";
+
+const lightning_Element = document.getElementById("lightning_id");
+
+lightning_Element.onpointerdown = () => {
+    lightning_Element.src = "img/lightning2.png";
+    lightning_Element.setAttribute("height", "200");
+    lightning_Element.setAttribute("width", "200");
+    
+    lightning_sound.play();
+
+    setTimeout(() => { lightning_Element.src = "img/lightning.png"; }, 1000);
+};
+
+const weapon_sound = document.createElement("audio");
+weapon_sound.src = "sounds/weapon.mp3";
+
+const weapon_Element = document.getElementById("weapon_id");
+
+weapon_Element.onpointerdown = () => {
+    weapon_Element.src = "img/weapon2.png";
+    weapon_Element.setAttribute("height", "200");
+    weapon_Element.setAttribute("width", "200");
+    
+    weapon_sound.play();
+
+    setTimeout(() => { weapon_Element.src = "img/weapon.png"; }, 1000);
+};
+
+
+
+
+
+
+
+
+    
+    
+    </script>
+    
+</html>
